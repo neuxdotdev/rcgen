@@ -1,0 +1,19 @@
+[package]
+name = "rcgen"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.43", features = ["serde"] }
+clap = { version = "4.5.55", features = ["derive"] }
+git2 = "0.20.3"
+regex = "1.12.2"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+thiserror = "2.0.18"
+toml = "0.9.11"
+
+[package.metadata.dist]
+formats = ["tar.gz", "zip"]
+include = ["README.md", "LICENSE", "Cargo.toml", "src"]
+binary = "rcgen"
