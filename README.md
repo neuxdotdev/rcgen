@@ -1,0 +1,2 @@
+# rcgen
+changelogs generator
